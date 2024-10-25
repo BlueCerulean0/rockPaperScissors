@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissors</title>
-    <link rel="icon" href="images/eto-ehe.png" type="image/png">
+    <link rel="icon" href="images/aqua-icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <div class="title">Let's a play a game of Rock Paper Scissors!</div>
-        <button class="play" id="play">Play!</button>
+    <div class="title">Let's a play a game of Rock Paper Scissors!</div> 
+    <div class="container">       
         <div class="rps">
-            <button>Rock</button>        
-            <button>Paper</button>
-            <button>Scissors</button>
+            <button class="rock" id="rock"></button>        
+            <button class="paper" id="paper"></button>
+            <button class="scissor" id="scissor"></button>
         </div>
-    <div>
-    
+    </div>
+
+    <div class="modal" id="myModal">
+
+        <div id="pop" class="pop">
+            <p id="msg">Results</p>
+            <button id="ok" class="ok" onclick="closeModal()">Play again!</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="paper.js"></script>
 </body>
 </html>
